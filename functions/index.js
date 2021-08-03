@@ -10,7 +10,7 @@ const stripe = require("stripe")(
 //App Config
 const app = express();
 //Middlewares
-app.use(cors({ origin: true }));
+app.use(cors({ origin: "https://fitness-deliverer-c88c7.firebaseapp.com" }));
 app.use(express.json());
 //API routes
 app.get("/", (request, response) =>
